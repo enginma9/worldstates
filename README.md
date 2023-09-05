@@ -1,2 +1,6 @@
 # worldstates
-Shows basic weather, along with Warframe world statuses
+Simple, single page site, showing 
+  Basic, real-world weather
+  Warframe world statuses/rotations
+  Challenges
+  Bounties with rewards
