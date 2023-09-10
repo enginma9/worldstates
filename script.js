@@ -30,7 +30,7 @@ fetch(apiUrl)
     
     const divOpenWorld = document.createElement("div");
     divOpenWorld.setAttribute("id", "OpenWorld");
-    //divOpenWorld.classList("centered");
+    //divOpenWorld.classList("crystalFG");
     divOpenWorld.appendChild(document.createTextNode( "OpenWorlds:" ));
     //divOpenWorld.appendChild(document.createTextNode( cycle ));
     divOpenWorld.appendChild(document.createElement("br"));
@@ -129,6 +129,14 @@ fetch(apiUrl)
       divEvents.appendChild( document.createTextNode( event.description ) );
       divEvents.appendChild(document.createElement("br"));
     });
+
+    divOpenWorld.classList.add("crystalFG");
+    divEvents.classList.add("crystalFG");
+    divNightwave.classList.add("crystalFG");
+    divSortie.classList.add("crystalFG");
+    divArchon.classList.add("crystalFG");
+    divBaro.classList.add("crystalFG");
+    divVault.classList.add("crystalFG");
 
     cyclesElement.appendChild( divOpenWorld );
     cyclesElement.appendChild( divEvents );

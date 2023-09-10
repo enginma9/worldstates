@@ -1,25 +1,67 @@
 
-div{
-    border-style: solid !important;
-    border-radius: 15px;
-    border: 1px;
-    border-color: #3d2424;
+.midBG{
+    background: radial-gradient(#8d8ffe 49%,#0000 50%) calc(32px/-2) calc(32px/2),
+    repeating-conic-gradient(from 45deg,#86d9f3 0 25%,#0000 0 50%)
+      calc(32px/2) calc(32px/2),
+    radial-gradient(#8d8ffe 49%,#0000 50%),radial-gradient(#8d8ffe 49%,#0000 50%) 32px 32px #86d9f3;
+background-size: calc(2*32px) calc(2*32px);
 }
+
+.darkPolkaBG{
+    background:
+      radial-gradient(#45166e 49%,#0000 50%) calc(28px/-2) calc(28px/2),
+      repeating-conic-gradient(from 45deg,#000000 0 25%,#0000 0 50%)
+        calc(28px/2) calc(28px/2),
+      radial-gradient(#45166e 49%,#0000 50%),radial-gradient(#45166e 49%,#0000 50%) 28px 28px #000000;
+    background-size: calc(2*28px) calc(2*28px);
+    /*color: turquoise;*/
+}
+
+.darkFencesBG{
+    background:
+      radial-gradient(27% 29% at right, #0000 83%,#45166e 85% 99%,#0000 101%) calc(28px/2) 28px,
+      radial-gradient(27% 29% at left, #0000 83%,#45166e 85% 99%,#0000 101%) calc(28px/-2) 28px,
+      radial-gradient(29% 27% at top, #0000 83%,#45166e 85% 99%,#0000 101%) 0 calc(28px/2),
+      radial-gradient(29% 27% at bottom, #0000 83%,#45166e 85% 99%,#0000 101%) 0 calc(28px/-2)
+      #000000;
+    background-size: 56px 56px;
+    /*color: turquoise;*/
+}
+
+.crystalFG{
+    background: rgba(201,41,255,0.2);
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(201,41,255,0.1);
+    border-radius: 1vw;
+    color: #4ff4e4;
+}
+
+.darkFencesFG{
+    color: turquoise;
+    background-color: black;
+    border-style:double;
+    border-color: turquoise;
+    border-radius: 2vw;
+}
+
+.flexDaddy{
+    height: 100%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div{ 
+  padding:1vw; 
+  margin:1vw;
+}
+
 
 #warframeCycles{
-    border-style:  !important;
-}
-
-/*
-html, body {
-    height:100%;
-}
-
-body{
-  background-color: hsl(300, 100%, 10%); 
-  color: hsl(189, 97%, 56%);
-  margin: 0;
-  background: linear-gradient(to bottom, hsl(300, 100%, 5%), hsl(300, 100%, 10%), hsl(300, 100%, 15%));
+    
 }
 
 a {
@@ -53,4 +95,3 @@ p{
     margin:5px;
 }
 
-*/
