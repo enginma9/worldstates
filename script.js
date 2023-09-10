@@ -129,7 +129,11 @@ fetch(apiUrl)
     });
 
     const cyclesElement = document.getElementById("warframeCycles");
-
+    const top1 = document.getElementById("top1");
+    const top3 = document.getElementById("top3");
+    const bottom1 = document.getElementById("bottom1");
+    const bottom2 = document.getElementById("bottom2");
+    
     divOpenWorld.classList.add("crystalFG");
     divEvents.classList.add("crystalFG");
     divNightwave.classList.add("crystalFG");
@@ -138,13 +142,14 @@ fetch(apiUrl)
     divBaro.classList.add("crystalFG");
     divVault.classList.add("crystalFG");
 
-    cyclesElement.appendChild( divOpenWorld );
-    cyclesElement.appendChild( divEvents );
-    cyclesElement.appendChild( divNightwave );
-    cyclesElement.appendChild( divSortie );
-    cyclesElement.appendChild( divArchon );
-    cyclesElement.appendChild( divBaro );
-    cyclesElement.appendChild( divVault );
+    top1.appendChild( divOpenWorld );
+    top1.appendChild( divEvents );
+    bottom1.appendChild( divSortie );
+    bottom1.appendChild( divArchon );
+    //bottom1.appendChild( divFissures );
+    bottom2.appendChild( divNightwave );
+    bottom2.appendChild( divBaro );
+    bottom2.appendChild( divVault );
             
     // }
     // Add link to https://hub.warframestat.us/poe/map

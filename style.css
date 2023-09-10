@@ -54,6 +54,26 @@ background-size: calc(2*32px) calc(2*32px);
     align-items: center;
 }
 
+.horizontal{
+  display:flex;
+  flex-direction: row;
+}
+.between{
+  display:flex;
+  justify-content: space-between;
+}
+.vertical{
+  display:flex;
+  flex-direction: column;
+}
+.top{
+  display:flex;
+  justify-content: start;
+}
+.around{
+  justify-content: space-around;
+}
+
 div{ 
   padding:1vw; 
   margin:1vw;
