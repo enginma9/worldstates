@@ -7,8 +7,6 @@
 
 // Select the div elements to fill
 const refreshedTimeElement = document.getElementById('refreshedTime')
-const cyclesElement = document.getElementById("warframeCycles");
-
 
 // API URL
 const apiUrl = 'https://api.warframestat.us/ps4';
@@ -129,6 +127,8 @@ fetch(apiUrl)
       divEvents.appendChild( document.createTextNode( event.description ) );
       divEvents.appendChild(document.createElement("br"));
     });
+
+    const cyclesElement = document.getElementById("warframeCycles");
 
     divOpenWorld.classList.add("crystalFG");
     divEvents.classList.add("crystalFG");
