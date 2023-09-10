@@ -1,0 +1,56 @@
+
+div{
+    border-style: solid !important;
+    border-radius: 15px;
+    border: 1px;
+    border-color: #3d2424;
+}
+
+#warframeCycles{
+    border-style:  !important;
+}
+
+/*
+html, body {
+    height:100%;
+}
+
+body{
+  background-color: hsl(300, 100%, 10%); 
+  color: hsl(189, 97%, 56%);
+  margin: 0;
+  background: linear-gradient(to bottom, hsl(300, 100%, 5%), hsl(300, 100%, 10%), hsl(300, 100%, 15%));
+}
+
+a {
+  text-decoration: none;
+  color: #ddddff;
+}
+
+a.glow, a.glow:hover, a.glow:focus
+{
+	text-decoration: none;
+	color: #eee;
+	text-shadow: none;
+	-webkit-transition: 300ms linear 0s;
+	-moz-transition: 300ms linear 0s;
+	-o-transition: 300ms linear 0s;
+	transition: 300ms linear 0s;
+	outline: 0 none;
+}
+
+a.glow:hover, a.glow:focus
+{
+	text-shadow: -1px 1px 8px #ffc, 1px -1px 8px #fff;
+}
+
+.textshadow a.backlit:hover, .textshadow a.backlit:focus
+{
+	color: black;
+}
+
+p{
+    margin:5px;
+}
+
+*/
