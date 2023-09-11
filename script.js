@@ -95,9 +95,9 @@ fetch(apiUrl)
     });
     
     // data.voidTrader: 
-    const divBaro = document.createElement("div");
+    const divBaro = document.getElementById("divBaro");
     // data.voidTrader: character | location
-    divBaro.appendChild(document.createTextNode( data.voidTrader.character.concat( " | ", data.voidTrader.location ) ) )
+    divBaro.appendChild(document.createTextNode( data.voidTrader.character.concat( " | ", data.voidTrader.location ) ) );
     divBaro.appendChild(document.createElement("br"));
     // data.voidTrader.inventory:
     data.voidTrader.inventory.forEach( i => {
@@ -128,28 +128,52 @@ fetch(apiUrl)
       divEvents.appendChild(document.createElement("br"));
     });
 
+    // Fissures 
+    const divFissures = document.createElement("div");
+    divFissures.appendChild(document.createTextNode( "Fissures:" ) )
+    divFissures.appendChild(document.createElement("br"));
+    // data.fissures[]:
+    data.fissures.forEach( fissure => {
+      const paraFissure = document.createElement("p");
+      // tier: "Lith" node: "Spear (Mars)" missionType: "Defense" eta:	"7m 36s"
+      // "Lith |  Normal | 7m 36s" = tier | isHard | eta
+      // "Spear (Mars) | Defense"  = node | missionType
+      paraFissure.appendChild( document.createTextNode( fissure.tier.concat( " | ", fissure.eta, " | ",  fissure.isHard ? "Hard ":"Normal" ) ) );
+      paraFissure.appendChild(document.createElement("br"));
+      paraFissure.appendChild( document.createTextNode( fissure.node.concat( " | ", fissure.missionType) ) );
+      paraFissure.appendChild(document.createElement("br"));
+      divFissures.appendChild( paraFissure );
+    });
+
+    // Get anchors to add to DOM
     const cyclesElement = document.getElementById("warframeCycles");
     const top1 = document.getElementById("top1");
     const top3 = document.getElementById("top3");
     const bottom1 = document.getElementById("bottom1");
-    const bottom2 = document.getElementById("bottom2");
+    const divNightVault = document.getElementById("divNightVault");
     
+    // Add formatting
     divOpenWorld.classList.add("crystalFG");
     divEvents.classList.add("crystalFG");
     divNightwave.classList.add("crystalFG");
+    divNightwave.classList.add("fit");
     divSortie.classList.add("crystalFG");
     divArchon.classList.add("crystalFG");
     divBaro.classList.add("crystalFG");
+    //divBaro.classList.add("fit");
     divVault.classList.add("crystalFG");
+    divVault.classList.add("fit");
+    divFissures.classList.add("crystalFG");
 
+    // Add to DOM
     top1.appendChild( divOpenWorld );
     top1.appendChild( divEvents );
     bottom1.appendChild( divSortie );
     bottom1.appendChild( divArchon );
-    //bottom1.appendChild( divFissures );
-    bottom2.appendChild( divNightwave );
-    bottom2.appendChild( divBaro );
-    bottom2.appendChild( divVault );
+    bottom1.appendChild( divFissures );
+    divNightVault.appendChild( divNightwave );
+    //bottom2.appendChild( divBaro );
+    divNightVault.appendChild( divVault );
             
     // }
     // Add link to https://hub.warframestat.us/poe/map

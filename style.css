@@ -1,3 +1,43 @@
+body{
+  font-size: 1vw;
+}
+
+#header, #top1, #top2, #top3, #bottom, #bottom1, #bottom2, #divNightVault{
+  margin:0;
+  padding:0;
+}
+
+#top1, #top2, #top3{
+  max-width: 30%;
+  min-width: 25%;
+}
+
+#clan{
+  max-width: 25vw;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+
+#bottom1{
+  max-width: 30%;
+  min-width: 25%; 
+}
+
+#bottom2{
+  max-width: 65%;
+  min-width: 60%;
+  
+}
+
+.wrap{
+  /* Set to wrap based on what will fit at the top. */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fit{
+  width:fit-content;
+}
 
 .midBG{
     background: radial-gradient(#8d8ffe 49%,#0000 50%) calc(32px/-2) calc(32px/2),
@@ -73,7 +113,15 @@ background-size: calc(2*32px) calc(2*32px);
 .around{
   justify-content: space-around;
 }
-
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fill{
+  height:100%;
+  width: 100%;
+}
 div{ 
   padding:1vw; 
   margin:1vw;

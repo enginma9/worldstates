@@ -13,17 +13,22 @@
     <title>Warframe Worldstate Info</title>
 </head>
 <body class="darkFencesBG ">
-    <div id="header" class="horizontal between"> <!-- flexbox keeping elements as far apart as possible-->
+    <div id="header" class="horizontal around"> <!-- flexbox keeping elements as far apart as possible-->
         <div id="top1" class="vertical top"> <!-- flexbox bringing items stacked vertically from top -->
             <div id="refreshedTime" class="crystalFG"></div> 
             <!-- OpenWorlds -->
             <!-- Events -->
         </div> <!-- top1 -->
-        <div id="top2" class="vertical top"> <!-- flexbox bringing items stacked vertically from top -->
-            <img id="clan" class="crystalFG" src="warframe-fortunate-tenno3b.png" alt="warframeClanImage"> <!-- Just the clan logo. -->
+        <div id="top2" class="center "> <!-- flexbox bringing items stacked vertically from top -->
+            <div id="divClan" class="crystalFG vertical top">
+                <img id="clan" src="warframe-fortunate-tenno3b.png" alt="warframeClanImage"> <!-- Just the clan logo. -->
+            </div>
         </div> <!-- top2 -->
-        <div id="top3" class="vertical top crystalFG"> <!-- flexbox bringing items stacked vertically from top -->
-            <!-- weather -->
+        <div id="top3" class="vertical top "> <!-- flexbox bringing items stacked vertically from top -->
+            <div id="divWeather" class="crystalFG fill center">
+                <!-- weather -->
+                future weather data
+            </div>
         </div> <!-- top3 -->
     </div> <!-- header -->
     <div id="bottom" class="horizontal around">
@@ -32,10 +37,15 @@
             <!-- Archon -->
             <!-- Fissures -->
         </div> <!-- bottom1 -->
-        <div id="bottom2" class="vertical top"> <!--  -->
-            <!-- Nightwave -->
-            <!-- Baro -->
-            <!-- Vault -->
+        <div id="bottom2" class="vertical top"> <!-- vertical top -->
+            <div id="divBaro"class ="">
+                <!-- Baro -->
+            </div>
+            <div id="divNightVault" class="wrap">
+                <!-- Nightwave -->
+                <!-- Vault -->
+            </div>
+            
         </div> <!-- bottom2 -->
     </div> <!-- bottom -->
     <div id="footer" class="crystalFG horizontal around">Cool links</div>
