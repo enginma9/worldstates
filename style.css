@@ -2,6 +2,13 @@ body{
   font-size: 1vw;
 }
 
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  body{
+    font-size: 3vw;
+  }
+}
+
 #header, #top1, #top2, #top3, #bottom, #bottom1, #bottom2, #divNightVault{
   margin:0;
   padding:0;

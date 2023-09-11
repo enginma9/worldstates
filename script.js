@@ -24,7 +24,7 @@ fetch(apiUrl)
     // Get the current time
     const currentDate = new Date();
     const currentTimeString = currentDate.toLocaleTimeString(); // Returns a string in the format "hh:mm:ss AM/PM"
-    refreshedTimeElement.textContent = "Refreshed:".concat(currentTimeString );
+    refreshedTimeElement.textContent = "".concat(currentTimeString );
     
     const divOpenWorld = document.createElement("div");
     divOpenWorld.setAttribute("id", "OpenWorld");
