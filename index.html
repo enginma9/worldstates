@@ -13,43 +13,49 @@
     <title>Warframe Worldstate Info</title>
 </head>
 <body class="darkFencesBG ">
-    <div id="header" class="horizontal around"> <!--  -->
-        <div id="top1" class="vertical top"> <!-- flexbox bringing items stacked vertically from top -->
-            <div id="refreshedTime" class="crystalFG"></div> 
+    <div id="divHeader" class="horizontal around"> <!--  -->
+        <div id="top1" class="vertical top bordered"> 
+            
             <!-- OpenWorlds -->
             <!-- Events -->
         </div> <!-- top1 -->
-        <div id="top2" class="center "> <!-- flexbox bringing items stacked vertically from top -->
-            <div id="divClan" class="crystalFG vertical top">
-                <img id="clan" src="warframe-fortunate-tenno3b.png" alt="warframeClanImage"> <!-- Just the clan logo. -->
-            </div>
+        <div id="top2" class="vertical top "> 
+            <div id="refreshedTime" class="crystalFG"></div> 
+            <div id="divClan" class=" crystalFG center">
+                <img id="clan" src="warframe-fortunate-tenno4.png" alt="warframeClanImage"> <!-- Just the clan logo. -->
+            </div> <!-- divClan -->
         </div> <!-- top2 -->
-        <div id="top3" class="vertical top "> <!-- flexbox bringing items stacked vertically from top -->
-            <div id="divWeather" class="crystalFG fill center">
+        <div id="top3" class="vertical top bordered"> <!-- flexbox bringing items stacked vertically from top -->
+            <div id="divWeather" class="crystalFG  center vertical_fill">
                 <!-- weather -->
                 future weather data
-            </div>
+            </div> <!-- divWeather -->
         </div> <!-- top3 -->
     </div> <!-- header -->
     <div id="bottom" class="horizontal around">
-        <div id="bottom1" class="vertical top"> <!--  -->
+        <div id="bottom1" class="vertical top bordered"> <!--  -->
             <!-- Sortie -->
             <!-- Archon -->
             <!-- Fissures -->
         </div> <!-- bottom1 -->
-        <div id="bottom2" class="vertical top"> <!-- vertical top -->
+        <div id="bottom2" class="vertical top bordered"> <!-- vertical top -->
             <div id="divBaro"class ="">
                 <!-- Baro -->
-            </div>
+            </div> <!-- divBaro -->
             <div id="divNightVault" class="wrap">
                 <!-- Nightwave -->
                 <!-- Vault -->
-            </div>
+            </div> <!-- divNightVault -->
             
         </div> <!-- bottom2 -->
     </div> <!-- bottom -->
-    <div id="footer" class="crystalFG horizontal around">Cool links</div>
-    <!-- <div id="warframeCycles"></div>  placeholder for items for now -->
+    <div id="footer" class="crystalFG horizontal around"> 
+        <a href="https://stats.uptimerobot.com/q7g2Yckvl" target="blank" class="" rel="noopener noreferrer"> Uptime </a>
+        <a href="https://hub.warframestat.us/poe/map" target="blank" class="" rel="noopener noreferrer"> Plains Map </a>
+        <a href="https://drops.warframestat.us/" target="blank" class="" rel="noopener noreferrer"> Drops </a>
+        <a href="https://docs.warframestat.us/" target="blank" class="" rel="noopener noreferrer"> WF API </a>
+        <a href="https://warframe-mastery.com" target="blank" class="" rel="noopener noreferrer"> Mastery </a>
+    </div> <!-- footer -->
     <script src="script.js"></script>
 </body>
 </html>

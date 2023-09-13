@@ -2,13 +2,6 @@ body{
   font-size: 1vw;
 }
 
-@media only screen and (max-width: 620px) {
-  /* For mobile phones: */
-  body{
-    font-size: 3vw;
-  }
-}
-
 #header, #top1, #top2, #top3, #bottom, #bottom1, #bottom2, #divNightVault{
   margin:0;
   padding:0;
@@ -18,9 +11,17 @@ body{
   max-width: 30%;
   min-width: 25%;
 }
-
+.bordered{
+  border-style: double;
+  border-color: turquoise;
+  border-radius: 1vw;
+}
+#divHeader{
+  margin-bottom: 1vw;
+}
 #clan{
   max-width: 25vw;
+  height: 75%;
   margin-top: 1vw;
   margin-bottom: 1vw;
 }
@@ -81,9 +82,16 @@ background-size: calc(2*32px) calc(2*32px);
     backdrop-filter: blur(6px);
     border: 1px solid rgba(201,41,255,0.1);
     border-radius: 1vw;
-    color: #4ff4e4;
+    color: #ccc;/* #4ff4e4; */
 }
-
+/*
+p{
+  background: rgba(201,41,255,0);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border-radius: 1vw;
+    color: #ccc;
+}*/
 .darkFencesFG{
     color: turquoise;
     background-color: black;
@@ -129,25 +137,23 @@ background-size: calc(2*32px) calc(2*32px);
   height:100%;
   width: 100%;
 }
+.vertical_fill{
+  height:100%;
+}
 div{ 
   padding:1vw; 
   margin:1vw;
 }
 
-
-#warframeCycles{
-    
-}
-
 a {
   text-decoration: none;
-  color: #ddddff;
+  color: turquoise;
 }
 
 a.glow, a.glow:hover, a.glow:focus
 {
 	text-decoration: none;
-	color: #eee;
+	color: turquoise;
 	text-shadow: none;
 	-webkit-transition: 300ms linear 0s;
 	-moz-transition: 300ms linear 0s;
@@ -170,3 +176,14 @@ p{
     margin:5px;
 }
 
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  body{
+    font-size: 2.5vw;
+  }
+  #bottom1, #bottom2{
+    width: 45%;
+    max-width: 45%;
+    min-width: 45%;
+  }
+}

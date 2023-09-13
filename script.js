@@ -174,9 +174,7 @@ fetch(apiUrl)
     divNightVault.appendChild( divNightwave );
     //bottom2.appendChild( divBaro );
     divNightVault.appendChild( divVault );
-            
-    // }
-    // Add link to https://hub.warframestat.us/poe/map
+
   })
   .catch(error => {
     console.error('Fetch error:', error);
