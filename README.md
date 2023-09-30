@@ -6,4 +6,4 @@ Simple, single page site, showing
   - Challenges
   - Bounties with rewards
 
-[WorldStates Site]((https://enginma9.github.io/worldstates/)https://enginma9.github.io/worldstates/ "Warframe Worldstate Details")
+[WorldStates Site](https://enginma9.github.io/worldstates/) 
